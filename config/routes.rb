@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'alpha/index'
 
+  resources :alpha
   resources :emails, defaults: {format: :json}
 
   # The priority is based upon order of creation: first created -> highest priority.
