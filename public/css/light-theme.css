@@ -1,0 +1,184 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[ MASTER STYLESHEET ]
+AUTHOR : NCode.Art
+PROJECT : NC-Hold Coming-Soon Page
+VERSION : 1.2
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	GENERAL
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body { background-color: #000; color: #000; }
+
+/*	TITLE
+------------------------------*/
+.title-wrapper .title,
+.title-wrapper.sub .title{ color: #000; }
+.title-wrapper .line{ background-color: rgba(0,0,0,0.5); }
+.title-wrapper p{ color: #000; font-weight: 300; }
+
+/*	BUTTON
+------------------------------*/
+.btn.btn-color{ background-color: #000; color: #fff; }
+.btn.btn-color:hover{
+	background-color: transparent;
+	border-color: #000;
+	color: #000;
+}
+
+/*	LOADER
+------------------------------*/
+.page-loader-wrapper{ background-color: #fff; }
+.pg-loader.page-loader-wrapper{ background-color: rgba(255,255,255,0.8); }
+.loader:before { background: #000; }
+.loader:after { background: #000; }
+
+/*	OWL-CAROUSEL
+------------------------------*/
+.carousel-btn .btn{ color: #000; border-color: #000; }
+
+/*	NAVIGATION
+------------------------------*/
+.nc-menu-trigger span{ background-color: #000; }
+.nc-menu-container.visible-on{ background-color: #fff; }
+.nc-menu-close::after, 
+.nc-menu-close::before{ background-color: #000; }
+li.nc-active,
+.nc-menu li .link-box,
+.nc-menu-container .nav-header{ border-color: rgba(0,0,0,0.1); }
+.link-box{ color: #000; }
+.nc-menu li .link-box:hover{ background-color: #000; color: #fff; }
+.nc-menu li.nc-active .link-box {
+    background-color: #000;
+    color: #fff;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	HOME PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*	TAGLINE
+------------------------------*/
+.tagline h1{ color: #000; }
+.tagline p{ color: #000; font-weight: 300; }
+
+
+/*	SUBSCRIBE
+------------------------------*/
+.subscribe .form-control{
+	background-color: rgba(205,205,205,1);
+	color: #000;
+	font-weight: 300;
+	border-color: rgba(0,0,0,0.5);
+}
+.subscribe .form-control:focus{ border-color: #000; }
+.subscribe .icon{ color: rgba(0,0,0,0.5); }
+.subscribe .icon:hover{ color: #000; }
+#notifyMe .message{ font-weight: 400; letter-spacing: 1px; }
+.subscribe .form-control::-webkit-input-placeholder { color: #000; }
+.subscribe .form-control:-moz-placeholder { color: #000; }
+.subscribe .form-control::-moz-placeholder { color: #000; }
+.subscribe .form-control:-ms-input-placeholder { color: #000; }
+
+/*	SOCIAL-ICON
+------------------------------*/
+.social-icon .icon{ color: #000; }
+.social-icon .icon:hover{ color: #fff; }
+.social-icon .icon:hover .box{ border-color: #000; background-color: #000; }
+
+/*	COPYRIGHTS
+------------------------------*/
+.copyrights{ color: rgba(0,0,0,0.8); }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	ABOUT PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.text-info p{ color: #000; }
+
+/*	MEASURE-BOX
+------------------------------*/
+.measure-box{ background-color: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.5); }
+.measure-box .per{ background-color: #000; }
+.measure-box .title{ font-weight: 400; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	SERVICES PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*	INFO-BOX
+------------------------------*/
+.info-box .icon .box{ background-color: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.5); }
+.info-box .text p{ color: #000; }
+.info-box:hover .icon{ color: #fff; }
+.info-box:hover .icon .box{ background-color: #000; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	TIME PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* COUNTDOWN-CLOCK
+--------------------------------*/
+.dash .digit { color: #000; }
+.dash{ background-color: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.5); }
+.dash_title{ color: #000; font-weight: 300; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	CONTACT PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*  CONTACT FORM
+---------------------------------*/
+.contact-form .form-control{ 
+	background-color: rgba(0,0,0,0.06); 
+	border-color: rgba(0,0,0,0.5); 
+	color: #000;
+}
+.contact-form .form-control:focus{ border-color: #000; }
+.form-control::-webkit-input-placeholder { color: #000; }
+.form-control:-moz-placeholder { color: #000; }
+.form-control::-moz-placeholder { color: #000; }
+.form-control:-ms-input-placeholder { color: #000; }
+
+/*  CONTACT-BOX
+---------------------------------*/
+.contact-box{ background-color: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.5); }
+.contact-box:hover{ border-color: #000; }
+.contact-box .text p,
+.contact-box .text a{ color: #000; font-weight: 400; }
+.contact-box:hover .icon{ background-color: #000; color: #fff; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	OUR-TEAM PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.team-box .text{ background-color: rgba(0,0,0,0.9); }
+.team-box .text .h-text{ color: #fff; border-color: rgba(255,255,255,0.5); }
+.team-box .small-text{ color: rgba(255,255,255,0.6); }
+.team-box .social-link .icon{ color: #fff }
+.team-box .social-link .icon:hover{ color: #000; background-color: #fff; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PORTFOLIO PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.portfolio-carousel .carousel .item{ background-color: #fff; }
+.portfolio-detail .h-text, .portfolio-detail p{ color: #fff; }
+.portfolio-carousel .carousel-btn .btn{ background-color: rgba(0,0,0,0.06); }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PORTFOLIO-1 PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.port2-box .port-detail{ background-color: rgba(0,0,0,0.8); }
+.port-detail .tools .tool{ color: #fff; border-color: #fff; }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PACKAGE PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.package-box,
+.package-box .top-wrp{ background-color: rgba(0,0,0,0.08); }
+.package-box .amount-wrp .other{ color: #000; }
+.package-box .detail li{ border-color: rgba(0,0,0,0.5); }
+.package-box:hover{ border-color: #000; }

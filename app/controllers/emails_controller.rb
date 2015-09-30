@@ -1,16 +1,13 @@
 class EmailsController < ApplicationController
   def create
-    @email = Email.new(email_params)
+
+    @email = Email.new
+    @email.email = params[:email]
     if @email.save
-      redirect_to root_url
+      render json: {status: "success"}
     else
-      render "home/index"
+      render json: @email.errors.full_messages.join(", ")
     end
   end
-  private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def email_params
-      params.require(:email).permit(:email)
-    end
 end
