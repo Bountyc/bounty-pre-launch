@@ -1,3 +1,4 @@
+showText = true;
 $(document).ready(function(){
 var mspf = 60;  // MS per frame
 var trailLen = 24; // Characterss per 'strand'
@@ -19,14 +20,18 @@ function rain(){
 function myFun (c,uid) {
 var id = "";
 setTimeout(function(){
+  if (showText) {
   if (c == trailLen){
     var y = Math.floor(Math.random() * ($("#out").height() / 10) ) * 12; // height / 10 * 12 ensures a small space between trails, and also prevents overlapping (in theory) 
     var x = Math.floor(Math.random() * ($("#out").width() / 10) ) * 12;
     var scale = (Math.random() * 12) + 8;
     $("#out").append("<div style='font-size:"+scale+"px;top:"+y+"px;left:"+x+"px;' class='trail' id='"+uid+"'></div>"); // add .trail
   }
-  if (--c){myFun(c,uid);}
+  if (--c){
+    myFun(c,uid);
+  }
   $("div[id="+uid+"]").append("<span>"+theLetters.substr(Math.floor(Math.random()*theLetters.length),1)+"</span><br>"); // adds spans to .trail 
+}
 }, mspf)    
 };
 
