@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  post 'admin/index'
+
+  get 'admin/login'
+
   resources :alpha
   resources :emails, defaults: {format: :json}
 

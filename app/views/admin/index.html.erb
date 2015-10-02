@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Emails</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Created at</th>
+      </tr>
+    </thead>
+    <tbody>
+	    <% @emails.each do |email| %>
+	    	<tr>
+	    		<td><%= email.id %></td>
+		        <td><%= email.email %></td>
+		        <td><%= email.created_at %></td>
+	      	</tr>
+		<% end %>
+    </tbody>
+  </table>
+</div>
